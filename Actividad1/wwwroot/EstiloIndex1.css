@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebe2e2ab;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    align-items: center;
+    height: 100vh;
+}
+h2 {
+    color: #FFFF;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #117acf;
+    border-radius: 5px;
+}
+
+a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke; 
+}
+
+p{
+    color: #FFFF;
+}
+nav{
+    position: absolute; 
+    top: 10px; 
+    right: 10px;
+    background-color: #3498db;
+    padding: 10px;
+    border-radius: 5px;
+}
