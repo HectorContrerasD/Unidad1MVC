@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversión de Moneda</title>
+    <link rel="stylesheet" href="~/EstiloIndAct2.css">
 </head>
 <body>
     <h1>Conversión de Moneda</h1>
-    <form action="/Home/Index">
+    <form class="container" action="/Home/Index">
         <label for="monto">Ingrese la cantidad:</label>
         <input type="text" id="Monto" name="Monto" value="@Model.Monto" required><br>
         <label for="TipoMoneda ">Moneda de destino:</label>
@@ -17,7 +18,7 @@
             <option value="USD">USD</option>
         </select><br>
         <input type="submit" value="Convertir"><br>
-        <label>Total: @Model.Resultado.ToString("$0.00")</label>
+        <label class="resultado">Total: @Model.Resultado.ToString("$0.00")</label>
     </form>
 </body>
 </html>
