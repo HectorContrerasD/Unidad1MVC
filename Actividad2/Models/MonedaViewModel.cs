@@ -3,7 +3,7 @@
     public class MonedaViewModel
     {
         public string? TipoMoneda { get; set; }
-        public decimal MonedaOrigen { get; set; }
-        public decimal MonedaDestino { get; set; }
+        public decimal Monto { get; set; }
+        public decimal Resultado { get; set; }
     }
 }

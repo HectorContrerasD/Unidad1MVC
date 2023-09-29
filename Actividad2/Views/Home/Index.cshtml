@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model Actividad2.Models.MonedaViewModel
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -7,16 +8,16 @@
 </head>
 <body>
     <h1>Conversión de Moneda</h1>
-    <form action="/Conversion/Convertir">
+    <form action="/Home/Index">
         <label for="monto">Ingrese la cantidad:</label>
-        <input type="text" id="monto" name="monto" required><br>
-        <label for="monedaDestino">Moneda de destino:</label>
-        <select id="monedaDestino" name="monedaDestino">
+        <input type="text" id="Monto" name="Monto" value="@Model.Monto" required><br>
+        <label for="TipoMoneda ">Moneda de destino:</label>
+        <select id="TipoMoneda " name="TipoMoneda">
             <option value="MXN">MXN</option>
             <option value="USD">USD</option>
         </select><br>
         <input type="submit" value="Convertir"><br>
-        <label>Total: $0.00</label>
+        <label>Total: @Model.Resultado.ToString("$0.00")</label>
     </form>
 </body>
 </html>
